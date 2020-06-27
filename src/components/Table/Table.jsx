@@ -1,12 +1,12 @@
 import React from 'react';
 
-import testData from 'testData'
 import TableRow from 'components/Table/tableRow/TableRow'
 
-const Table = () => {
-  let table = testData.map((el) => {
+
+const Table = (props) => {
+  let table = props.state.map((el) => {
     return (
-      <TableRow name={el.name} date={el.date} days={el.days} mission={el.mission} multi={el.isMultiple}>
+      <TableRow name={el.name} date={el.date} days={el.days} mission={el.mission} multi={el.isMultiple} dispatch={props.dispatch}>
       </TableRow>
     )
   })
