@@ -106,13 +106,11 @@ export const store = {
         this.newItem.isMultiple = action.isMultiple
         
         this._state.push(this.newItem)
-        console.log(this._state)
         this._callSubscriber(this._state)
         break
       case REMOVE_ROW:
         const requiredItem = this._state.findIndex(item => item.name === action.searchItem )
         this._state.splice(requiredItem, 1)
-        console.log(this._state)
         this._callSubscriber(this._state)
         break
       default:

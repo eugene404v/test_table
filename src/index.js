@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from 'App';
 
 import 'main.css';
-import {store} from 'store';
+import {store} from 'redux/store';
 
 const reRenderTree = () => {
   ReactDOM.render( 

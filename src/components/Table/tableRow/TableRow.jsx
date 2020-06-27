@@ -1,12 +1,14 @@
 import React from 'react';
 import dateChanger from 'utils/dateChanger';
 import multiplier from 'utils/multiplier';
+import {removeRowActionCreator} from 'utils/actionCreators'
+
 
 const TableRow = (props) => {
   const delBtn = React.createRef();
 
   const deleteHandler = () => {
-    props.dispatch({type: "REMOVE_ROW", searchItem: delBtn.current.id})
+    props.dispatch(removeRowActionCreator(delBtn))
   }
 
  return (<tr>
