@@ -13,7 +13,17 @@ const Table = (props) => {
 
 
   return (
-    <table>
+    <table className="table">
+      <thead className="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Date</th>
+          <th scope="col">Duration</th>
+          <th scope="col">Mission</th>
+          <th scope="col">Multiple</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
       <tbody>
         {table}
       </tbody>

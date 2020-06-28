@@ -23,12 +23,16 @@ const TableCreate = (props) => {
 
   return (
     <div>
-      <form action="" onSubmit={formHandler}>
-        <input type="text" ref={nameInput}></input>
+      <form action="" onSubmit={formHandler} className="form">
+        <input type="text" ref={nameInput} placeholder="name"></input>
         <input type="date" ref={dateInput}></input>
-        <input type="text" ref={daysInput}></input>
-        <input type="text" ref={missionInput}></input>
-        <input type="submit" value="submit" />
+        <input type="text" ref={daysInput} placeholder="days"></input>
+        <input type="text" ref={missionInput} placeholder="mission"></input>
+        <input type="radio" name="multi" value="true" ref={multiInput} id="multiple"></input>
+        <label for="multiple">Multiple</label>
+        <input type="radio" name="multi" value="false" ref={multiInput} id="single"></input>
+        <label for="single">Single</label>
+        <input type="submit" value="submit" className="btn btn-success"/>
       </form>
 
     </div>

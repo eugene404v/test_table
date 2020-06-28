@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from 'App';
 
-import 'main.css';
+import 'main.scss';
 import {store} from 'redux/store';
 
 const reRenderTree = () => {

@@ -17,7 +17,10 @@ const TableRow = (props) => {
    <td>{props.days}</td>
    <td>{props.mission}</td>
    <td>{multiplier(props.multi)}</td>
-   <td><button id={props.name} onClick={deleteHandler} ref={delBtn}>delete</button></td>
+   <td><button className="btn"
+   id={props.name} 
+   onClick={deleteHandler} 
+   ref={delBtn}>delete</button></td>
  </tr>)
 }
 
